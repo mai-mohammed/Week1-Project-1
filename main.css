@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+/* --------- Global --------- */
+:root {
+  --text-color: #555555;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+/*  --------- Header --------- */
+
+header {
+  height: 7rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+nav {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  background-color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+nav div {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 2px 0;
+}
+
+/* --------- Section 1 Landing Page --------- */
+
+.sec-1 {
+  height: 590px;
+}
+.sec1-container {
+  height: 100%;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.land-img {
+  width: 24rem;
+  height: 24rem;
+  background: url(images/land_img.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.land-content {
+  word-wrap: break-word;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.land-content h1 {
+  font-weight: 300;
+  font-size: 5rem;
+}
+.land-content p {
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+button {
+  text-transform: uppercase;
+  padding: 1.2em 2.5em;
+  background: transparent;
+  border: 2px solid var(--text-color);
+  border-radius: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+/* --------- Section 2 ---------*/
+
+.sec-2 {
+  background-color: #f7f7f7;
+  height: 800px;
+}
+
+.sec2-container {
+  height: 100%;
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.sec-span {
+  height: 1px;
+  width: 90px;
+  background-color: var(--text-color);
+}
+
+.sec2-container p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+.sec2-container .p2 {
+  line-height: 1.1;
+}
+.cir-container li {
+  width: 140px;
+  height: 140px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 2.8;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0px 11px;
+  border: 2px solid var(--text-color);
+}
+
+/* .cir-container li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 50%;
+  height: 2px;
+  background: var(--text-color);
+  z-index: -1; 
+}
+
+.cir-container li:first-child::before {
+  display: none;
+} */
+
+/*-------- Section 3 --------*/
+
+.sec-3 {
+  height: 1900px;
+}
+
+.sec3-container {
+  height: 100%;
+  width: 1200px;
+  margin : 0 auto ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sec3-container p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+h3{
+    font-weight: 300;
+    font-size: 2rem;
+}
+.internal-sec{
+    height: 400px;
+    display: flex ;
+    justify-content: space-between ;
+    
+} 
+.internal-sec article {
+    height: 100%;
+    width : 48% ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.art-span{
+    height: 1px;
+    width: 60px;
+    background-color: var(--text-color);
+}
+.img-1 {
+  background: url(images/img_1.jpg);
+}
+.img-2 {
+  background: url(images/img_2.jpg);
+}
+.img-3 {
+  background: url(images/img_3.jpg);
+}
+
+.sec3-container .img {
+  width : 48% ;
+  height : auto ;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 20px;
+}
