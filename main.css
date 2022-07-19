@@ -51,7 +51,7 @@ nav div {
 .sec1-container {
   height: 100%;
   display: flex;
-  width: 1200px;
+  width: 79%;
   margin: 0 auto;
   justify-content: space-evenly;
   align-items: center;
@@ -105,7 +105,7 @@ button {
 .sec2-container {
   height: 100%;
   display: flex;
-  width: 1200px;
+  width: 79%;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -130,18 +130,6 @@ h2 {
 .sec2-container .p2 {
   line-height: 1.1;
 }
-/* .cir-container li {
-  width: 140px;
-  height: 140px;
-  font-size: 50px;
-  text-align: center;
-  line-height: 2.8;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  margin: 0px 11px;
-  border: 2px solid var(--text-color);
-} */
 .cir-container{
   width :100% ;
 }
@@ -154,7 +142,7 @@ h2 {
 .conn-cir-container span {
   width: 140px;
   height: 140px;
-  font-size: 50px;
+  font-size: 3.125rem;
   border: 2px solid var(--text-color);
   display: flex;
   justify-content: center;
@@ -176,6 +164,7 @@ h2 {
 
 .conn-cir-container span:first-child::before {
   display: none;
+
 } 
 
 /*-------- Section 3 --------*/
@@ -186,7 +175,7 @@ h2 {
 
 .sec3-container {
   height: 100%;
-  width: 1200px;
+  width: 79%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -251,7 +240,7 @@ h3 {
 }
 .sec4-container {
   height: 100%;
-  width: 1200px;
+  width: 79%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -281,7 +270,7 @@ footer {
 }
 
 .footer-container {
-  width: 1200px;
+  width: 79%;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -316,7 +305,7 @@ footer {
   width: 50px;
   height: 50px;
   border: 2px solid var(--text-color);
-  font-size: 23px;
+  font-size: 1.438rem;
   display: flex;
   justify-content: center;
   align-items: center;
