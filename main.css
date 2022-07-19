@@ -42,6 +42,16 @@ nav div {
   background-color: #fff;
   margin: 2px 0;
 }
+/* -------- containers ---------- */
+.sec1-container,
+.sec2-container,
+.sec3-container,
+.sec4-container,
+.footer-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 /* --------- Section 1 Landing Page --------- */
 
@@ -51,8 +61,6 @@ nav div {
 .sec1-container {
   height: 100%;
   display: flex;
-  width: 79%;
-  margin: 0 auto;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -95,6 +103,28 @@ button {
   cursor: pointer;
   color: var(--text-color);
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .sec1-container {
+    flex-direction: column;
+  }
+  .land-content {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+  .land-img {
+    height: 120%;
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 /* --------- Section 2 ---------*/
 
 .sec-2 {
@@ -105,10 +135,8 @@ button {
 .sec2-container {
   height: 100%;
   display: flex;
-  width: 79%;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   justify-content: space-evenly;
 }
 h2 {
@@ -130,18 +158,18 @@ h2 {
 .sec2-container .p2 {
   line-height: 1.1;
 }
-.cir-container{
-  width :100% ;
+.cir-container {
+  width: 100%;
 }
 .conn-cir-container {
-  width :95% ;
-  display: flex ;
-  justify-content :space-evenly ;
-
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .conn-cir-container span {
-  width: 140px;
-  height: 140px;
+  width: 8.75rem;
+  height: 8.75rem;
   font-size: 3.125rem;
   border: 2px solid var(--text-color);
   display: flex;
@@ -151,7 +179,7 @@ h2 {
   position: relative;
 }
 
- .conn-cir-container span::before {
+.conn-cir-container span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -159,14 +187,25 @@ h2 {
   width: 54%;
   height: 2px;
   background: var(--text-color);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .conn-cir-container span:first-child::before {
   display: none;
-
-} 
-
+}
+@media (max-width: 600px) {
+  .conn-cir-container span::before {
+    display: none;
+  }
+  .conn-cir-container {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .conn-cir-container span {
+    margin: 1rem 1rem;
+  }
+}
 /*-------- Section 3 --------*/
 
 .sec-3 {
@@ -175,8 +214,6 @@ h2 {
 
 .sec3-container {
   height: 100%;
-  width: 79%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -231,6 +268,43 @@ h3 {
   border-radius: 20px;
 }
 
+@media (max-width: 600px) {
+  .internal-sec {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+  }
+  .internal-sec article {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+  .internal-sec article button {
+    width: 100%;
+  }
+  .sec3-container > button {
+    width: 100%;
+  }
+  .sec3-container article p {
+    text-align: center;
+  }
+  .sec3-container .img {
+    height: 50%;
+    width: 100%;
+    order: -1;
+  }
+  .sec-3 {
+    height: 2300px;
+  }
+  /* .sec3-container .end-p ::before{
+   content :"";
+   background-color :#555555;
+   width :100%;
+   height :2px;
+  } */
+}
+
 /* ------ section 4 -------- */
 
 .sec-4 {
@@ -240,8 +314,6 @@ h3 {
 }
 .sec4-container {
   height: 100%;
-  width: 79%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -270,8 +342,6 @@ footer {
 }
 
 .footer-container {
-  width: 79%;
-  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -339,12 +409,12 @@ textarea {
 
 input[type="text"],
 input[type="email"] {
-  width : 47%;
+  width: 47%;
 }
 
-.footer-container>p {
-  color: #dcdcdc ;
+.footer-container > p {
+  color: #dcdcdc;
 }
- .footer-container>span {
-  background-color :  #dcdcdc ;
+.footer-container > span {
+  background-color: #dcdcdc;
 }
