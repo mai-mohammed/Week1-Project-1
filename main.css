@@ -146,9 +146,9 @@ h2 {
   width :100% ;
 }
 .conn-cir-container {
-  width :100% ;
+  width :95% ;
   display: flex ;
-  justify-content :space-around ;
+  justify-content :space-evenly ;
 
 }
 .conn-cir-container span {
@@ -160,22 +160,23 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  position: relative;
 }
 
-/* .cir-container li::before {
+ .conn-cir-container span::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -50%;
-  width: 50%;
+  left: -55%;
+  width: 54%;
   height: 2px;
   background: var(--text-color);
-  z-index: -1; 
+  z-index: 1; 
 }
 
-.cir-container li:first-child::before {
+.conn-cir-container span:first-child::before {
   display: none;
-} */
+} 
 
 /*-------- Section 3 --------*/
 
